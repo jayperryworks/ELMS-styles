@@ -731,7 +731,7 @@ textarea {
 }
 
 /* line 27, ../../_preprocess/sass/app.scss */
-a, button {
+a, .button {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -745,7 +745,7 @@ h1, h2 {
 }
 
 /* line 73, ../../_preprocess/sass/app.scss */
-p em, dl em, ul em, h3, p strong, dl strong, ul strong, h5, html, p, dl, ul, button {
+p em, dl em, ul em, h3, p strong, dl strong, ul strong, h5, html, p, dl, ul, .button {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -956,7 +956,7 @@ section {
 }
 
 /* line 284, ../../_preprocess/sass/app.scss */
-button {
+.button {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
@@ -967,43 +967,43 @@ button {
 }
 
 /* line 291, ../../_preprocess/sass/app.scss */
-button.primary {
+.button.primary {
   color: white;
   background: #e57339;
   border: none;
 }
 /* line 296, ../../_preprocess/sass/app.scss */
-button.primary:hover {
+.button.primary:hover {
   color: white;
   background: #e88350;
 }
 /* line 301, ../../_preprocess/sass/app.scss */
-button.primary:active, button.primary:focus {
+.button.primary:active, .button.primary:focus {
   background: #d0581b;
   transition: none;
   border: none;
 }
 
 /* line 308, ../../_preprocess/sass/app.scss */
-button.secondary {
+.button.secondary {
   color: #dbdee3;
   background: #373b43;
   border: none;
 }
 /* line 313, ../../_preprocess/sass/app.scss */
-button.secondary:hover {
+.button.secondary:hover {
   color: white;
   background: #424751;
 }
 /* line 318, ../../_preprocess/sass/app.scss */
-button.secondary:active, button.secondary:focus {
+.button.secondary:active, .button.secondary:focus {
   background: #27292f;
   transition: none;
   border: none;
 }
 
 /* line 325, ../../_preprocess/sass/app.scss */
-button.large {
+.button.large {
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -1034,7 +1034,7 @@ button.large {
   border-right: none;
 }
 /* line 347, ../../_preprocess/sass/app.scss */
-.button.group.horizontal button {
+.button.group.horizontal .button {
   margin: -2px;
   border-right: 1px solid #27292f;
 }

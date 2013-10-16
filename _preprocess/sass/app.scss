@@ -281,14 +281,14 @@ section {
 
 
 
-button {
+.button {
 	@extend %open_sans;
 	@extend %base-transition;
 	@include inline-block;
 	@include rem(padding, 18px 36px);
 }
 
-button.primary {
+.button.primary {
 	color: white;
 	background: $orange;
 	border: none;
@@ -305,7 +305,7 @@ button.primary {
 	}
 }
 
-button.secondary {
+.button.secondary {
 	color: $gray--light;
 	background: $gray--dark;
 	border: none;
@@ -322,7 +322,7 @@ button.secondary {
 	}
 }
 
-button.large {
+.button.large {
 	@include rem(font-size, 18px);
 }
 
@@ -344,7 +344,7 @@ button.large {
 		}
 	}
 
-	button {
+	.button {
 		margin: -2px;
 		border-right: 1px solid $black;
 	}

@@ -46,15 +46,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_layouts\/default.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/default.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/assets\/images\/icon-cc.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -65,6 +56,15 @@
       "outputAbbreviatedPath" : "\/assets\/images\/icon-cc.png",
       "initialSize" : 1360,
       "fileType" : 8192
+    },
+    "\/_layouts\/default.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/default.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/_preprocess\/js\/plugins\/console.js" : {
       "ignoreWasSetByUser" : 0,
@@ -99,16 +99,16 @@
       "initialSize" : 6482,
       "fileType" : 8192
     },
-    "\/assets\/js\/main.min.js" : {
+    "\/assets\/images\/logo-jpw--full.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/main.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/main.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/images\/logo-jpw--full.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/logo-jpw--full.png",
+      "initialSize" : 3631,
+      "fileType" : 8192
     },
     "\/assets\/images\/icon-cc-by.png" : {
       "ignoreWasSetByUser" : 0,
@@ -121,24 +121,26 @@
       "initialSize" : 1121,
       "fileType" : 8192
     },
-    "\/_layouts\/post.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/assets\/js\/vendor\/modernizr-2.6.2.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_layouts\/post.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/assets\/js\/vendor\/modernizr-2.6.2.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/assets\/js\/modernizr-2.6.2.min.min.js",
+      "fileType" : 64
     },
-    "\/apple-touch-icon-precomposed.png" : {
+    "\/assets\/images\/icon-cc-sa.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "inputAbbreviatedPath" : "\/assets\/images\/icon-cc-sa.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "initialSize" : 1226,
+      "outputAbbreviatedPath" : "\/assets\/images\/icon-cc-sa.png",
+      "initialSize" : 1337,
       "fileType" : 8192
     },
     "\/config.rb" : {
@@ -162,16 +164,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/assets\/js\/vendor\/modernizr-2.6.2.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/vendor\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/assets\/js\/modernizr-2.6.2.min.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "initialSize" : 1226,
+      "fileType" : 8192
     },
     "\/_preprocess\/sass\/_helpers.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -185,16 +187,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/assets\/images\/icon-cc-sa.png" : {
+    "\/_preprocess\/sass\/_syntax.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/icon-cc-sa.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/icon-cc-sa.png",
-      "initialSize" : 1337,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/_preprocess\/sass\/_syntax.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/css\/_syntax.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/_preprocess\/sass\/_modules.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -208,6 +211,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_layouts\/post.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_layouts\/post.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -217,28 +229,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_preprocess\/sass\/_syntax.scss" : {
+    "\/assets\/js\/main.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_preprocess\/sass\/_syntax.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/assets\/css\/_syntax.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/assets\/images\/logo-jpw--full.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/logo-jpw--full.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/logo-jpw--full.png",
-      "initialSize" : 3631,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/assets\/js\/main.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/main.min.min.js",
+      "fileType" : 64
     },
     "\/assets\/images\/logo-jpw--icon.png" : {
       "ignoreWasSetByUser" : 0,

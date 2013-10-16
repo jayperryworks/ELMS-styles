@@ -1,0 +1,379 @@
+// normalize.css
+@import "normalize";
+
+// bourbon and NEAT grid frameworks
+@import "bourbon/bourbon";
+
+@import "print";
+// @import "syntax"; // for code highlighting
+@import "base"; // BP base styles
+@import "helpers";
+// @import "modules";
+
+
+// ==========================================================================
+// Settings
+// ==========================================================================
+
+// Layout
+// --------------------------------------------------------------------------
+
+$max-width: 800px;
+
+
+// Animation
+// --------------------------------------------------------------------------
+
+%base-transition {
+	@include transition (all 0.2s ease-in);
+}
+
+// Colors
+// --------------------------------------------------------------------------
+
+// highlights
+$orange: #e57339;
+$yellow: #fac000;
+$green: #51bc34;
+$blue: #139be9;
+$cyan: #218897;
+$purple: #af13c6;
+
+// neutrals
+$black: #27292f;
+$gray--dark: #373b43;
+$gray--med: #979797;
+$gray--light: #dbdee3;
+
+// Type
+// --------------------------------------------------------------------------
+
+$base-font-size--default: 16; // in pixels
+$base-line-height: 1.5; // base line height (ratio, no units)
+
+// base font sizes @ each breakpoint
+// see media queries below for breakpoint sizes
+$base-font-size--xsmall: 14px;
+$base-font-size--small: 16px;
+$base-font-size--medium: 18px;
+$base-font-size--large: 20px;
+
+$bitter: 'Bitter', #{$georgia};
+$open_sans: 'Open Sans', #{$helvetica};
+$playfair: 'Playfair Display';
+
+$amp: 'Palatino', 'Baskerville', 'Book Antiqua', serif;
+
+%bitter {
+	font-family: $bitter;
+	font-weight: 400;
+	font-style: normal;
+}
+
+%open_sans {
+	font-family: $open_sans;
+	font-weight: 400;
+	font-style: normal;
+}
+
+%open_sans--italic {
+	@extend %open_sans;
+	font-weight: 400;
+	font-style: italic;
+}
+
+%open_sans--light {
+	@extend %open_sans;
+	font-weight: 300;
+}
+
+%open_sans--semibold {
+	@extend %open_sans;
+	font-weight: 600;
+}
+
+%open_sans--bold {
+	@extend %open_sans;
+	font-weight: 700;
+}
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+html {
+	@extend %open_sans;
+	line-height: $base-line-height;
+}
+
+h1, %h1 {
+	@extend %bitter;
+	@include rem(font-size, 72px);
+	color: $gray--dark;
+	margin: 0.3em 0;
+	letter-spacing: -0.02em;
+}
+
+h2, %h2 {
+	@extend %bitter;
+	@include rem(font-size, 40px);
+	margin: 0.3em 0;
+	color: $gray--dark;
+	letter-spacing: -0.03em;
+}
+
+h3, %h3 {
+	@extend %open_sans--light;
+	@include rem(font-size, 22px);
+	color: $gray--med;
+}
+
+h5, %h5 {
+	@extend %open_sans--bold;
+	@include rem(font-size, 12px);
+	color: $orange;
+	text-transform: uppercase;
+}
+
+p, dl, ul {
+	@extend %open_sans;
+	@include rem(font-size, 16px);
+	text-align: left;
+	color: lighten($gray--dark, 10);
+
+	em {
+		@extend %open_sans--italic;
+	}
+	strong {
+		@extend %open_sans--semibold;
+	}
+}
+
+dl {
+	@include list-unstyled;
+
+	dt {
+		@include inline-block;
+		margin: 0;
+		padding: 0 0 0 1em;
+		border-left: 1px solid $gray--light;
+
+		&:first-child {
+			border-left: none;
+			padding: 0;
+		}
+	}
+
+	dd {
+		@include inline-block;
+		margin: 0;
+		padding: 0;
+		padding-right: 1em;
+	}
+}
+
+a {
+	@extend %base-transition;
+	text-decoration: none;
+	color: $orange;
+
+	&:hover, &:active {
+		color: darken($orange, 10);
+	}
+}
+
+small {
+	@extend open_sans--light;
+
+}
+
+// best ampersand
+.amp {
+	font-family: $amp;
+	font-style: italic;
+	font-weight: normal !important; // can't ever be bold. sorry.
+	// margin: 0 em(1) 0 em(-1);
+	font-size: 1.1em; // RELATIVE to its parent. Will be slightly larger.
+	letter-spacing: -0.05em;
+	line-height: 1em;
+}
+
+// use a cooler ampersand if @fontface is supported
+.fontface .amp {
+	font-family: $playfair;
+	font-style: normal;
+}
+
+// ==========================================================================
+// Themes
+// ==========================================================================
+
+.flood, %flood {
+	background: $orange;
+	color: white;
+
+	h1 {
+		color: $black;
+	}
+	h3 {
+		color: white;
+	}
+	h5 {
+		color: darken($orange, 20);
+	}
+
+	a {
+		color: $black;
+
+		&:hover, &:active {
+			color: darken($orange, 30);
+		}
+	}
+}
+
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+
+header[role="banner"] {
+	@include rem(padding, 80px 0 0 0);
+	text-align: center;
+	border-bottom: 1px solid $gray--med;
+
+	.logo {
+		@include rem(margin, 0 auto 24px auto);
+		display: block;
+	}
+}
+
+hgroup {
+	h1, h3 {
+		margin: 0;
+	}
+}
+
+[role="main"], .wrapper {
+	@include rem(max-width, $max-width);
+	display: block;
+	clear: both;
+	margin: 0 auto;
+}
+
+[role="main"] {
+	@include rem(padding, 36px 0);
+}
+
+.has-hairline {
+	border-bottom: 1px solid $gray--med;
+}
+
+.has-hairline-top {
+	@include rem(padding-top, 24px);
+	border-top: 1px solid darken($orange, 20);
+}
+
+section {
+	text-align: center;
+}
+
+
+
+button {
+	@extend %open_sans;
+	@extend %base-transition;
+	@include inline-block;
+	@include rem(padding, 18px 36px);
+}
+
+button.primary {
+	color: white;
+	background: $orange;
+	border: none;
+
+	&:hover {
+		color: white;
+		background: lighten($orange, 5);
+	}
+
+	&:active, &:focus {
+		background: darken($orange, 10);
+		transition: none;
+		border: none;
+	}
+}
+
+button.secondary {
+	color: $gray--light;
+	background: $gray--dark;
+	border: none;
+
+	&:hover {
+		color: white;
+		background: lighten($gray--dark, 5);
+	}
+
+	&:active, &:focus {
+		background: $black;
+		transition: none;
+		border: none;
+	}
+}
+
+button.large {
+	@include rem(font-size, 18px);
+}
+
+.button.group.horizontal {
+	@include list-unstyled;
+	@include rem(padding, 24px 0);
+	@include rem(margin-top, 48px);
+	text-align: center;
+
+	li {
+		@include inline-block;
+		margin: 0;
+		padding: 0;
+
+		&:last-child {
+			button {
+				border-right: none;
+			}
+		}
+	}
+
+	button {
+		margin: -2px;
+		border-right: 1px solid $black;
+	}
+}
+
+.icons {
+	@include list-unstyled;
+	text-align: center;
+
+	li {
+		@include inline-block;
+		@include rem(margin, 0 12px);
+	}
+}
+
+footer[role="contentinfo"] {
+	@include rem(padding, 36px 0);
+	border-top: 1px solid $gray--light;
+	background: lighten($gray--light, 8);
+	// overflow: hidden;
+	text-align: center;
+	
+	a[rel="author"] {
+		display: block;
+		@include rem(margin, -50px 0 24px 0);
+
+	}
+
+	a[rel="license"] {
+		display: block;
+	}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Bitter:400,400italic|Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <header role="banner" class="flood">
+      <img src="{{ site.baseurl }}assets/images/logo-elms.png" alt="ELMS" style="max-width: 50px;" />
+      <hgroup>
+        <h1>ELMS styles</h1>
+        <h3>A style library <span class="amp">&amp;</span> interface theme for the <a href="http://elms.psu.edu">ELMS Framework</a></h3>
+        <h5>Version 1.0</h5>
+      </hgroup>
+      <a class="logo" href="http://jayperryworks.com"><img src="{{ site.baseurl }}assets/images/logo-jpw--full.png" alt="Jay Perry Works" /></a>
+        
+      <ul class="button group horizontal has-hairline-top">
+        <li><button class="secondary large" rel="pdf" href="{{ site.baseurl }}assets/pdf/ELMS_styles.pdf">Get the PDF</button></li>
+        <li><button class="secondary large" rel="download" href="#">Download the assets</button></li>
+      </ul>
+      <!-- <small><em>The files are quite large, the download may take some time.</em></small> -->
+    </header>
+
+    {{ content }}
+
+    <footer role="contentinfo">
+      <div class="wrapper">
+        <small>
+          <a rel="author" href="http://jayperryworks.com"><img src="{{ site.baseurl }}assets/images/logo-jpw--icon.png" alt="Jay Perry Works" /></a>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

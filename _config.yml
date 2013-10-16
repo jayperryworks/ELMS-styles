@@ -1,0 +1,8 @@
+name: The Engage Group
+#url:
+baseurl: 
+
+markdown: redcarpet
+pygments: true
+
+exclude: ["README.md", "config.rb", codekit-config.json", "ELMS-styles.sublime-project", "ELMS-styles.sublime-workspace"]
